@@ -456,6 +456,15 @@
 								<div class="article-toc" style="display: none;"></div>
 							</ul>
 			
+							<ul>
+								<li class="file">
+									<a href="/2021/06/12/%E5%B7%A5%E5%85%B7%E7%B3%BB%E5%88%97/%E5%B7%A5%E5%85%B7%E5%88%86%E4%BA%AB2/">
+										工具分享2
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
 								</li>
 								
 							</ul>
@@ -498,6 +507,15 @@
 								<li class="file">
 									<a href="/2021/05/22/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/Fork%20Join%E6%A1%86%E6%9E%B6/">
 										Fork Join框架
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/06/12/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/Future/">
+										Future
 									</a>
 								</li>
 								<div class="article-toc" style="display: none;"></div>
@@ -1726,6 +1744,15 @@
 			
 							<ul>
 								<li class="file">
+									<a href="/2021/06/12/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Java%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E7%9A%84%E8%89%BA%E6%9C%AF/%E5%8E%9F%E5%AD%90%E6%93%8D%E4%BD%9C/">
+										原子操作
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
 									<a href="/2021/06/06/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Java%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E7%9A%84%E8%89%BA%E6%9C%AF/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E7%9A%84%E6%8C%91%E6%88%98/">
 										并发编程的挑战
 									</a>
@@ -2052,6 +2079,131 @@
 		<div id="index">
 	
 		<div class="index-li">
+			<a href="/2021/05/15/%E7%AE%97%E6%B3%95/LeetCode/19%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%ACN%E4%B8%AA%E8%8A%82%E7%82%B9/">
+				<h2 class="index-title">
+					19删除链表的倒数第N个节点
+				</h2>
+				<div class="index-brief">
+					题目地址：https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/
+整体思路是让前面的指针先移动n步，之后前后指针共同移动直到前面的指针到尾部为止
+首先设立预先指针 pre，预先指针是一个小技巧
+设预先指针 pre 的下一个
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2021-05-15</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/算法/">算法</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/算法/LeetCode/">LeetCode</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2021/05/15/%E7%AE%97%E6%B3%95/LeetCode/1%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/">
+				<h2 class="index-title">
+					1两数之和
+				</h2>
+				<div class="index-brief">
+					题目地址:https://leetcode-cn.com/problems/two-sum/
+哈希表在进行迭代并将元素插入到表中的同时，我们可以回过头来检查表中是否已经存在当前元素所对应的目标元素
+如果它存在，那我们已经找到了对应解，并立即将其返回
+class Solution &#123;
+   
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2021-05-15</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/算法/">算法</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/算法/LeetCode/">LeetCode</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2021/05/15/%E7%AE%97%E6%B3%95/LeetCode/143%E9%87%8D%E6%8E%92%E9%93%BE%E8%A1%A8/">
+				<h2 class="index-title">
+					143重排链表
+				</h2>
+				<div class="index-brief">
+					题目地址：https://leetcode-cn.com/problems/reorder-list/
+注意到目标链表即为将原链表的左半端和反转后的右半端合并后的结果
+这样我们的任务即可划分为几步：
+
+找到原链表的中点
+
+我们可以使用快慢指针来 O(N)找到链表的中间节点
+
+将原链表的右半端反转
+
+
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2021-05-15</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/算法/">算法</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/算法/LeetCode/">LeetCode</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
 			<a href="/2021/05/15/%E7%AE%97%E6%B3%95/LeetCode/144%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%89%8D%E5%BA%8F%E9%81%8D%E5%8E%86/">
 				<h2 class="index-title">
 					144二叉树的前序遍历
@@ -2298,121 +2450,6 @@ class MinStack &#123;
 class Solution &#123;
     public List&lt;List&lt;Integer&gt;&gt; threeSum(int[] nums) &#123;
         List&
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2021-05-15</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/算法/">算法</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/算法/LeetCode/">LeetCode</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2021/05/15/%E7%AE%97%E6%B3%95/LeetCode/11%E7%9B%9B%E6%9C%80%E5%A4%9A%E6%B0%B4%E7%9A%84%E5%AE%B9%E5%99%A8/">
-				<h2 class="index-title">
-					11盛最多水的容器
-				</h2>
-				<div class="index-brief">
-					题目地址：https://leetcode-cn.com/problems/container-with-most-water/
-双指针class Solution &#123;
-    public int maxArea(int[] height) &#123;
-        if (heig
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2021-05-15</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/算法/">算法</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/算法/LeetCode/">LeetCode</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2021/05/15/%E7%AE%97%E6%B3%95/LeetCode/121%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BA/">
-				<h2 class="index-title">
-					121买卖股票的最佳时机
-				</h2>
-				<div class="index-brief">
-					题目地址：https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/
-public class Solution &#123;
-    public int maxProfit(int prices[]) &#123;
-    
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2021-05-15</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/算法/">算法</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/算法/LeetCode/">LeetCode</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2021/05/15/%E7%AE%97%E6%B3%95/LeetCode/125%E9%AA%8C%E8%AF%81%E5%9B%9E%E6%96%87%E4%B8%B2/">
-				<h2 class="index-title">
-					125验证回文串
-				</h2>
-				<div class="index-brief">
-					题目地址：https://leetcode-cn.com/problems/valid-palindrome/
-我们直接在原字符串 s 上使用双指针。在移动任意一个指针时，需要不断地向另一指针的方向移动，直到遇到一个字母或数字字符，或者两指针重合为止。也就是说，我们每次将指针移到下一个字母字符或数字
 					...
 				</div>
 			</a>

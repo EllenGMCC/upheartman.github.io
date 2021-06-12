@@ -456,6 +456,15 @@
 								<div class="article-toc" style="display: none;"></div>
 							</ul>
 			
+							<ul>
+								<li class="file">
+									<a href="/2021/06/12/%E5%B7%A5%E5%85%B7%E7%B3%BB%E5%88%97/%E5%B7%A5%E5%85%B7%E5%88%86%E4%BA%AB2/">
+										工具分享2
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
 								</li>
 								
 							</ul>
@@ -498,6 +507,15 @@
 								<li class="file">
 									<a href="/2021/05/22/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/Fork%20Join%E6%A1%86%E6%9E%B6/">
 										Fork Join框架
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/06/12/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/Future/">
+										Future
 									</a>
 								</li>
 								<div class="article-toc" style="display: none;"></div>
@@ -1726,6 +1744,15 @@
 			
 							<ul>
 								<li class="file">
+									<a href="/2021/06/12/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Java%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E7%9A%84%E8%89%BA%E6%9C%AF/%E5%8E%9F%E5%AD%90%E6%93%8D%E4%BD%9C/">
+										原子操作
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
 									<a href="/2021/06/06/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Java%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E7%9A%84%E8%89%BA%E6%9C%AF/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E7%9A%84%E6%8C%91%E6%88%98/">
 										并发编程的挑战
 									</a>
@@ -2052,6 +2079,125 @@
 		<div id="index">
 	
 		<div class="index-li">
+			<a href="/2021/05/15/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E8%99%9A%E6%8B%9F%E6%9C%BA/%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E7%AE%97%E6%B3%95/">
+				<h2 class="index-title">
+					垃圾收集算法
+				</h2>
+				<div class="index-brief">
+					分代收集理论
+当前商业虚拟机的垃圾收集器，大多数都遵循了分代收集的理论进 行设计，分代收集名为理论，实质是一套符合大多数程序运行实际情况的经验法则，它建立在两个分代假说之上：
+
+弱分代假说：绝大多数对象都是朝生夕灭的。 
+
+强分代假说：熬过越多次垃圾收集过程的对象就越难以消亡。
+
+
+部分收集（Par
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2021-05-15</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/读书笔记/">读书笔记</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/读书笔记/深入理解Java虚拟机/">深入理解Java虚拟机</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2021/05/15/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E8%99%9A%E6%8B%9F%E6%9C%BA/%E5%AF%B9%E8%B1%A1%E5%B7%B2%E6%AD%BB/">
+				<h2 class="index-title">
+					对象已死
+				</h2>
+				<div class="index-brief">
+					引用计数算法
+在对象中添加一个引用计数器，每当有一个地方 引用它时，计数器值就加一；当引用失效时，计数器值就减一；任何时刻计数器为零的对象就是不可 能再被使用的。
+举个简单的例子，对象objA和objB都有字段instance，赋值令 objA.instance=objB及objB.instance
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2021-05-15</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/读书笔记/">读书笔记</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/读书笔记/深入理解Java虚拟机/">深入理解Java虚拟机</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2021/05/15/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E8%99%9A%E6%8B%9F%E6%9C%BA/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A8/">
+				<h2 class="index-title">
+					类加载器
+				</h2>
+				<div class="index-brief">
+					Java虚拟机设计团队有意把类加载阶段中的通过一个类的全限定名来获取描述该类的二进制字节流这个动作放到Java虚拟机外部去实现，以便让应用程序自己决定如何去获取所需的类。实现这个动作的代码被称为类加载器。
+类与类加载器比较两个类是否相等，只有在这两个类是由同一个类加载器加载的前提下才有意义，否则，即
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2021-05-15</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/读书笔记/">读书笔记</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/读书笔记/深入理解Java虚拟机/">深入理解Java虚拟机</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
 			<a href="/2021/05/15/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E8%99%9A%E6%8B%9F%E6%9C%BA/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E7%9A%84%E6%97%B6%E6%9C%BA/">
 				<h2 class="index-title">
 					类加载的时机
@@ -2290,118 +2436,6 @@ int elapsedTimeInDays;
 typedef struct redisDb &#123;
 
     // 数据库键
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2021-05-15</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/读书笔记/">读书笔记</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/读书笔记/Redis设计与实现/">Redis设计与实现</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2021/05/15/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/%E6%95%B4%E6%95%B0%E9%9B%86%E5%90%88/">
-				<h2 class="index-title">
-					整数集合
-				</h2>
-				<div class="index-brief">
-					整数集合（intset）是集合键的底层实现之一： 当一个集合只包含整数值元素， 并且这个集合的元素数量不多时， Redis 就会使用整数集合作为集合键的底层实现
-举个例子， 如果我们创建一个只包含五个元素的集合键， 并且集合中的所有元素都是整数值， 那么这个集合键的底层实现就会是整数集合：
-redi
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2021-05-15</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/读书笔记/">读书笔记</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/读书笔记/Redis设计与实现/">Redis设计与实现</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2021/05/15/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/%E7%AE%80%E5%8D%95%E5%8A%A8%E6%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2/">
-				<h2 class="index-title">
-					简单动态字符串
-				</h2>
-				<div class="index-brief">
-					Redis 没有直接使用 C 语言传统的字符串表示（以空字符结尾的字符数组，以下简称 C 字符串）， 而是自己构建了一种名为简单动态字符串（SDS）的抽象类型， 并将 SDS 用作 Redis 的默认字符串表示。
-在 Redis 里面， C 字符串只会作为字符串字面量， 用在一些无须对字符串值进行修
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2021-05-15</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/读书笔记/">读书笔记</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/读书笔记/Redis设计与实现/">Redis设计与实现</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2021/05/15/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/%E5%AF%B9%E8%B1%A1/">
-				<h2 class="index-title">
-					对象
-				</h2>
-				<div class="index-brief">
-					类型和编码Redis 使用对象来表示数据库中的键和值， 每次当我们在 Redis 的数据库中新创建一个键值对时， 我们至少会创建两个对象， 一个对象用作键值对的键（键对象）， 另一个对象用作键值对的值（值对象）。
-举个例子， 以下 SET 命令在数据库中创建了一个新的键值对， 其中键值对的键是一个包
 					...
 				</div>
 			</a>

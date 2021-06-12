@@ -456,6 +456,15 @@
 								<div class="article-toc" style="display: none;"></div>
 							</ul>
 			
+							<ul>
+								<li class="file">
+									<a href="/2021/06/12/%E5%B7%A5%E5%85%B7%E7%B3%BB%E5%88%97/%E5%B7%A5%E5%85%B7%E5%88%86%E4%BA%AB2/">
+										工具分享2
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
 								</li>
 								
 							</ul>
@@ -498,6 +507,15 @@
 								<li class="file">
 									<a href="/2021/05/22/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/Fork%20Join%E6%A1%86%E6%9E%B6/">
 										Fork Join框架
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/06/12/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/Future/">
+										Future
 									</a>
 								</li>
 								<div class="article-toc" style="display: none;"></div>
@@ -1726,6 +1744,15 @@
 			
 							<ul>
 								<li class="file">
+									<a href="/2021/06/12/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Java%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E7%9A%84%E8%89%BA%E6%9C%AF/%E5%8E%9F%E5%AD%90%E6%93%8D%E4%BD%9C/">
+										原子操作
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
 									<a href="/2021/06/06/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Java%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E7%9A%84%E8%89%BA%E6%9C%AF/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E7%9A%84%E6%8C%91%E6%88%98/">
 										并发编程的挑战
 									</a>
@@ -2052,6 +2079,96 @@
 		<div id="index">
 	
 		<div class="index-li">
+			<a href="/2021/05/22/ElasticSearch/%E5%88%86%E5%B8%83%E5%BC%8F%E7%89%B9%E6%80%A7/">
+				<h2 class="index-title">
+					分布式特性
+				</h2>
+				<div class="index-brief">
+					原文： https://juejin.cn/post/6864177856998539277
+1）ES支持集群模式，即一个分布式系统。其好处主要有以下2个:
+A、「可增大系统容量」。比如：内存、磁盘的增加使得ES能够支持PB级别的数据；
+B、「提高了系统可用性」。即使一部分节点停止服务，集群依然可以
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2021-05-22</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/ElasticSearch/">ElasticSearch</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2021/05/22/JVM/%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D/">
+				<h2 class="index-title">
+					内存分配
+				</h2>
+				<div class="index-brief">
+					原文： https://juejin.cn/post/6864531142671466504
+我又来分享知识点啦
+
+对象栈上分配我们通过JVM内存分配可以知道JAVA中的对象都是在堆上进行分配，当对象没有被引用的时候，需要依靠GC进行回收内存，如果对象数量较多的时候，会给GC带来较大压力，也间接影响
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2021-05-22</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/JVM/">JVM</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2021/05/22/Redis/%E5%BB%B6%E6%97%B6%E9%98%9F%E5%88%97/">
+				<h2 class="index-title">
+					延时队列
+				</h2>
+				<div class="index-brief">
+					原文： https://mp.weixin.qq.com/s/UNSE2B2yTOrobevRwSgVDQ
+所谓延时队列就是延时的消息队列，下面说一下一些业务场景
+实践场景
+订单支付失败，每隔一段时间提醒用户
+用户并发量的情况，可以延时2分钟给用户发短信
+先来看看Redis实现普通的消息队列
+我们知
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2021-05-22</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/Redis/">Redis</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
 			<a href="/2021/05/22/MySQL/MVCC/">
 				<h2 class="index-title">
 					MVCC
@@ -2262,107 +2379,6 @@ public class Test &#123;
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
                                         <a href="/categories/程序人生/">程序人生</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2021/05/16/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/%E9%9D%A2%E8%AF%95%E7%BB%8F%E5%8E%86/">
-				<h2 class="index-title">
-					面试经历
-				</h2>
-				<div class="index-brief">
-					原文: https://mp.weixin.qq.com/s/SOErvCCrmPaAVUphSO2Wqw
-最近一段时间面试了几家互联网公司，陆续通过了阿里、头条、美团，滴滴，京东的面试，基本上面试的公司都通过了，所以在这里想分享一些自己面试的经验给大家，希望能帮助大家拿到心仪的offer
-我的基本
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2021-05-16</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/程序人生/">程序人生</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2021/05/16/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/KAFKA/%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81%E9%AB%98%E5%8F%AF%E7%94%A8/">
-				<h2 class="index-title">
-					如何保证高可用
-				</h2>
-				<div class="index-brief">
-					原文: https://mp.weixin.qq.com/s/vka2DB6NS1S0XBSPQ6firw
-上次面试多次被问到一个问题：
-
-❝
-Kafka如何保证高可用的?
-❞
-
-「下面来跟大家分享下当时我答到的点」
-什么是高可用「高可用性」，指系统无间断地执行其功能的能力，代表系统的可用性程度
-K
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2021-05-16</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/消息队列/">消息队列</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/消息队列/KAFKA/">KAFKA</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2021/05/16/JVM/%E5%86%85%E5%AD%98%E5%AE%89%E5%85%A8/">
-				<h2 class="index-title">
-					内存安全
-				</h2>
-				<div class="index-brief">
-					原文: https://mp.weixin.qq.com/s/BJUgnDPP2wtUUEjPnCX0oA
-前言Java在内存管理方面是要比C/C++更方便的，不需要为每一个对象编写释放内存的代码，JVM虚拟机将为我们选择合适的时间释放内存空间，使得程序不容易出现内存泄漏和溢出的问题
-不过，也正是因
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2021-05-16</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/JVM/">JVM</a>
 										
                                     </span>
                                 

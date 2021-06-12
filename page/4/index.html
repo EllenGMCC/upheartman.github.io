@@ -456,6 +456,15 @@
 								<div class="article-toc" style="display: none;"></div>
 							</ul>
 			
+							<ul>
+								<li class="file">
+									<a href="/2021/06/12/%E5%B7%A5%E5%85%B7%E7%B3%BB%E5%88%97/%E5%B7%A5%E5%85%B7%E5%88%86%E4%BA%AB2/">
+										工具分享2
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
 								</li>
 								
 							</ul>
@@ -498,6 +507,15 @@
 								<li class="file">
 									<a href="/2021/05/22/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/Fork%20Join%E6%A1%86%E6%9E%B6/">
 										Fork Join框架
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/06/12/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/Future/">
+										Future
 									</a>
 								</li>
 								<div class="article-toc" style="display: none;"></div>
@@ -1726,6 +1744,15 @@
 			
 							<ul>
 								<li class="file">
+									<a href="/2021/06/12/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Java%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E7%9A%84%E8%89%BA%E6%9C%AF/%E5%8E%9F%E5%AD%90%E6%93%8D%E4%BD%9C/">
+										原子操作
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
 									<a href="/2021/06/06/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Java%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E7%9A%84%E8%89%BA%E6%9C%AF/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E7%9A%84%E6%8C%91%E6%88%98/">
 										并发编程的挑战
 									</a>
@@ -2050,6 +2077,123 @@
 	<!-- 引入正文 -->
 	<div id="content">
 		<div id="index">
+	
+		<div class="index-li">
+			<a href="/2021/05/15/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E8%99%9A%E6%8B%9F%E6%9C%BA/%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA%E5%9F%9F/">
+				<h2 class="index-title">
+					运行时数据区域
+				</h2>
+				<div class="index-brief">
+					Java虚拟机所管理的内存将会包括以下几个运行时数据区域
+
+
+程序计数器程序计数器是一块较小的内存空间，它可以看作是当前线程所执行的字节码的行号指示器。
+字节码解释器工作时就是通过改变这个计数器的值来选取下一条需要执行的字节码指令，它是程序控制流的指示器，分支、循环、跳转、异常处 理、线程恢复等基础
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2021-05-15</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/读书笔记/">读书笔记</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/读书笔记/深入理解Java虚拟机/">深入理解Java虚拟机</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2021/05/15/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E8%99%9A%E6%8B%9F%E6%9C%BA/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AF%B9%E8%B1%A1%E6%8E%A2%E7%A7%98/">
+				<h2 class="index-title">
+					虚拟机对象探秘
+				</h2>
+				<div class="index-brief">
+					创建当Java虚拟机遇到一条字节码new指令时，首先将去检查这个指令的参数是否能在常量池中定位到 一个类的符号引用，并且检查这个符号引用代表的类是否已被加载、解析和初始化过。如果没有，那 必须先执行相应的类加载过程。
+在类加载检查通过后，接下来虚拟机将为新生对象分配内存。对象所需内存的大小在类加载完
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2021-05-15</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/读书笔记/">读书笔记</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/读书笔记/深入理解Java虚拟机/">深入理解Java虚拟机</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2021/05/15/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E8%99%9A%E6%8B%9F%E6%9C%BA/%E7%BB%8F%E5%85%B8%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E5%99%A8/">
+				<h2 class="index-title">
+					经典垃圾收集器
+				</h2>
+				<div class="index-brief">
+					
+
+图展示了七种作用于不同分代的收集器，如果两个收集器之间存在连线，就说明它们可以搭配使用
+图中收集器所处的区域，则表示它是属于新生代收集器抑或是老年代收集器
+Serial收集器Serial收集器是最基础、历史最悠久的收集器，曾经（在JDK 1.3.1之前）是HotSpot虚拟机新生代 收集器的唯一
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2021-05-15</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/读书笔记/">读书笔记</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/读书笔记/深入理解Java虚拟机/">深入理解Java虚拟机</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
 	
 		<div class="index-li">
 			<a href="/2021/05/15/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E8%99%9A%E6%8B%9F%E6%9C%BA/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E7%9A%84%E8%BF%87%E7%A8%8B/">
@@ -2725,126 +2869,6 @@ public class StatelessFactorizer implements Servlet &#123;
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
                                         <a href="/categories/读书笔记/Java并发编程实战/">Java并发编程实战</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2021/05/15/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Effective%20Java/%E5%88%9B%E5%BB%BA%E5%92%8C%E9%94%80%E6%AF%81%E5%AF%B9%E8%B1%A1/">
-				<h2 class="index-title">
-					创建和销毁对象
-				</h2>
-				<div class="index-brief">
-					用静态工厂方法代替构造器
-对于类而言，为了让客户端获取它自身的一个实例，最传统的方法就是提供一个公有的构造器
-还有一种方法，类可以提供一个公有的静态工厂方法，它只是一个返回类的实例的静态方法
-下面是一个来自Boolean的简单示例
-这个方法将boolean 基本类型值转换成了一个Boolean 对象
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2021-05-15</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/读书笔记/">读书笔记</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/读书笔记/Effective-Java/">Effective Java</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2021/05/15/%E7%AE%97%E6%B3%95/%E9%9D%A2%E8%AF%95%E9%A2%98/17.14%E6%9C%80%E5%B0%8FK%E4%B8%AA%E6%95%B0/">
-				<h2 class="index-title">
-					17.14最小K个数
-				</h2>
-				<div class="index-brief">
-					题目地址：https://leetcode-cn.com/problems/smallest-k-lcci/
-class Solution &#123;
-    public int[] smallestK(int[] arr, int k) &#123;
-        if (k &gt;= a
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2021-05-15</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/算法/">算法</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/算法/面试题/">面试题</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2021/05/15/%E7%AE%97%E6%B3%95/%E9%9D%A2%E8%AF%95%E9%A2%98/16.06%E6%9C%80%E5%B0%8F%E5%B7%AE/">
-				<h2 class="index-title">
-					16.06最小差
-				</h2>
-				<div class="index-brief">
-					题目地址：https://leetcode-cn.com/problems/smallest-difference-lcci/
-对两个数组进行排序
-遍历两个数组，每次计算差值 就是对较小的那个进行迭代
-class Solution &#123;
-
-    public int smallestDif
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2021-05-15</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/算法/">算法</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/算法/面试题/">面试题</a>
 										
                                     </span>
                                 
