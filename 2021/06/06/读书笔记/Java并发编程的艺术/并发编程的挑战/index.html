@@ -2126,7 +2126,7 @@
 <h1 id="测试上下文切换次数和时长"><a href="#测试上下文切换次数和时长" class="headerlink" title="测试上下文切换次数和时长"></a>测试上下文切换次数和时长</h1><p>使用Lmbench3可以测量上下文切换的时长。 </p>
 <p>使用vmstat可以测量上下文切换的次数。 </p>
 <p>下面是利用vmstat测量上下文切换次数的示例。</p>
-<p><img src="https://xiaoflyfish.oss-cn-beijing.aliyuncs.com/image/20210605170926.png"></p>
+<p><img src="https://img-blog.csdnimg.cn/20210613220155258.png"></p>
 <p>CS(Content Switch)表示上下文切换的次数，从上面的测试结果中我们可以看到，上下文 每1秒切换1000多次</p>
 <h1 id="如何减少上下文切换"><a href="#如何减少上下文切换" class="headerlink" title="如何减少上下文切换"></a>如何减少上下文切换</h1><p>减少上下文切换的方法有无锁并发编程、CAS算法、使用最少线程和使用协程。</p>
 <ul>

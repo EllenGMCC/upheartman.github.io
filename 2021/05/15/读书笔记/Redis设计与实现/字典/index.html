@@ -2150,8 +2150,7 @@ OK
 <p><code>size</code> 属性记录了哈希表的大小， 也即是 <code>table</code> 数组的大小， 而 <code>used</code> 属性则记录了哈希表目前已有节点（键值对）的数量。</p>
 <p><code>sizemask</code> 属性的值总是等于 <code>size - 1</code> ， 这个属性和哈希值一起决定一个键应该被放到 <code>table</code> 数组的哪个索引上面。</p>
 <p>图展示了一个大小为 <code>4</code> 的空哈希表 （没有包含任何键值对）。</p>
-<img src="https://xiaoflyfish.oss-cn-beijing.aliyuncs.com/image/20201220211713.png" style="zoom:50%;" />
-
+<p><img src="https://img-blog.csdnimg.cn/20210613223934385.png"></p>
 <p><strong>哈希表节点</strong></p>
 <p>哈希表节点使用 <code>dictEntry</code> 结构表示， 每个 <code>dictEntry</code> 结构都保存着一个键值对：</p>
 <pre><code class="c">typedef struct dictEntry &#123;
@@ -2174,8 +2173,7 @@ OK
 <p><code>key</code> 属性保存着键值对中的键， 而 <code>v</code> 属性则保存着键值对中的值， 其中键值对的值可以是一个指针， 或者是一个 <code>uint64_t</code> 整数， 又或者是一个 <code>int64_t</code> 整数。</p>
 <p><code>next</code> 属性是指向另一个哈希表节点的指针， 这个指针可以将多个哈希值相同的键值对连接在一次， 以此来解决键冲突的问题。</p>
 <p>举个例子， 图就展示了如何通过 <code>next</code> 指针， 将两个索引值相同的键 <code>k1</code> 和 <code>k0</code> 连接在一起。</p>
-<img src="https://xiaoflyfish.oss-cn-beijing.aliyuncs.com/image/20201220212050.png" style="zoom:50%;" />
-
+<p><img src="https://img-blog.csdnimg.cn/20210613224007131.png"></p>
 <p><strong>字典</strong></p>
 <p>Redis 中的字典由 <code>dict.h/dict</code> 结构表示：</p>
 <pre><code class="c">typedef struct dict &#123;
@@ -2225,8 +2223,7 @@ OK
 <p><code>ht</code> 属性是一个包含两个项的数组， 数组中的每个项都是一个 <code>dictht</code> 哈希表， 一般情况下， 字典只使用 <code>ht[0]</code> 哈希表， <code>ht[1]</code> 哈希表只会在对 <code>ht[0]</code> 哈希表进行 rehash 时使用。</p>
 <p>除了 <code>ht[1]</code> 之外， 另一个和 rehash 有关的属性就是 <code>rehashidx</code> ： 它记录了 rehash 目前的进度， 如果目前没有在进行 rehash ， 那么它的值为 <code>-1</code> 。</p>
 <p>图示了一个普通状态下（没有进行 rehash）的字典：</p>
-<img src="https://xiaoflyfish.oss-cn-beijing.aliyuncs.com/image/20201220212443.png" style="zoom:50%;" />
-
+<p><img src="https://img-blog.csdnimg.cn/20210613224039415.png"></p>
 <h1 id="哈希算法"><a href="#哈希算法" class="headerlink" title="哈希算法"></a>哈希算法</h1><p>当要将一个新的键值对添加到字典里面时， 程序需要先根据键值对的键计算出哈希值和索引值， 然后再根据索引值， 将包含新键值对的哈希表节点放到哈希表数组的指定索引上面。</p>
 <p>Redis 计算哈希值和索引值的方法如下：</p>
 <pre><code class="c"># 使用字典设置的哈希函数，计算键 key 的哈希值
@@ -2236,8 +2233,7 @@ hash = dict-&gt;type-&gt;hashFunction(key);
 # 根据情况不同， ht[x] 可以是 ht[0] 或者 ht[1]
 index = hash &amp; dict-&gt;ht[x].sizemask;
 </code></pre>
-<img src="https://xiaoflyfish.oss-cn-beijing.aliyuncs.com/image/20201220212933.png" style="zoom:50%;" />
-
+<p><img src="https://img-blog.csdnimg.cn/20210613224110536.png"></p>
 <p>举个例子， 对于图所示的字典来说， 如果我们要将一个键值对 <code>k0</code> 和 <code>v0</code> 添加到字典里面， 那么程序会先使用语句：</p>
 <pre><code class="c">hash = dict-&gt;type-&gt;hashFunction(k0);
 </code></pre>
@@ -2246,8 +2242,7 @@ index = hash &amp; dict-&gt;ht[x].sizemask;
 <pre><code class="c">index = hash &amp; dict-&gt;ht[0].sizemask = 8 &amp; 3 = 0;
 </code></pre>
 <p>计算出键 <code>k0</code> 的索引值 <code>0</code> ， 这表示包含键值对 <code>k0</code> 和 <code>v0</code> 的节点应该被放置到哈希表数组的索引 <code>0</code> 位置上</p>
-<img src="https://xiaoflyfish.oss-cn-beijing.aliyuncs.com/image/20201220213040.png" style="zoom:50%;" />
-
+<p><img src="https://img-blog.csdnimg.cn/20210613224140268.png"></p>
 <p>当字典被用作数据库的底层实现， 或者哈希键的底层实现时， Redis 使用 MurmurHash2 算法来计算键的哈希值。</p>
 <p>MurmurHash这种算法的优点在于， 即使输入的键是有规律的， 算法仍能给出一个很好的随机分布性， 并且算法的计算速度也非常快。</p>
 <p>MurmurHash 算法目前的最新版本为 MurmurHash3 ， 而 Redis 使用的是 MurmurHash2 </p>
@@ -2255,8 +2250,7 @@ index = hash &amp; dict-&gt;ht[x].sizemask;
 <h1 id="解决键冲突"><a href="#解决键冲突" class="headerlink" title="解决键冲突"></a>解决键冲突</h1><p>当有两个或以上数量的键被分配到了哈希表数组的同一个索引上面时， 我们称这些键发生了冲突。</p>
 <p>Redis 的哈希表使用链地址法来解决键冲突： 每个哈希表节点都有一个 <code>next</code> 指针， 多个哈希表节点可以用 <code>next</code> 指针构成一个单向链表， 被分配到同一个索引上的多个节点可以用这个单向链表连接起来， 这就解决了键冲突的问题。</p>
 <p>举个例子， 假设程序要将键值对 <code>k2</code> 和 <code>v2</code> 添加到图所示的哈希表里面， 并且计算得出 <code>k2</code> 的索引值为 <code>2</code> ， 那么键 <code>k1</code> 和 <code>k2</code> 将产生冲突， 而解决冲突的办法就是使用 <code>next</code> 指针将键 <code>k2</code> 和 <code>k1</code> 所在的节点连接起来</p>
-<img src="https://xiaoflyfish.oss-cn-beijing.aliyuncs.com/image/20201220213349.png" style="zoom:50%;" />
-
+<p><img src="https://img-blog.csdnimg.cn/20210613224248296.png"></p>
 <p>因为 <code>dictEntry</code> 节点组成的链表没有指向链表表尾的指针， 所以为了速度考虑， 程序总是将新节点添加到链表的表头位置（复杂度为 O(1)）， 排在其他已有节点的前面</p>
 <h1 id="rehash"><a href="#rehash" class="headerlink" title="rehash"></a>rehash</h1><p>随着操作的不断执行， 哈希表保存的键值对会逐渐地增多或者减少， 为了让哈希表的负载因子维持在一个合理的范围之内， 当哈希表保存的键值对数量太多或者太少时， 程序需要对哈希表的大小进行相应的扩展或者收缩。</p>
 <p>扩展和收缩哈希表的工作可以通过执行 rehash （重新散列）操作来完成， Redis 对字典的哈希表执行 rehash 的步骤如下：</p>
@@ -2281,14 +2275,10 @@ index = hash &amp; dict-&gt;ht[x].sizemask;
 <li>释放 <code>ht[0]</code> ，并将 <code>ht[1]</code> 设置为 <code>ht[0]</code> ，然后为 <code>ht[1]</code> 分配一个空白哈希表。</li>
 </ol>
 <p>至此， 对哈希表的扩展操作执行完毕， 程序成功将哈希表的大小从原来的 <code>4</code> 改为了现在的 <code>8</code> 。</p>
-<img src="https://xiaoflyfish.oss-cn-beijing.aliyuncs.com/image/20201220214121.png" style="zoom:30%;" />
-
-<img src="https://xiaoflyfish.oss-cn-beijing.aliyuncs.com/image/20201220214148.png" style="zoom:30%;" />
-
-<img src="https://xiaoflyfish.oss-cn-beijing.aliyuncs.com/image/20201220214233.png" style="zoom:30%;" />
-
-<img src="https://xiaoflyfish.oss-cn-beijing.aliyuncs.com/image/20201220214257.png" style="zoom:30%;" />
-
+<p><img src="https://img-blog.csdnimg.cn/20210613224420678.png"></p>
+<p><img src="https://img-blog.csdnimg.cn/20210613224446843.png"></p>
+<p><img src="https://img-blog.csdnimg.cn/20210613224512426.png"></p>
+<p><img src="https://img-blog.csdnimg.cn/20210613224534935.png"></p>
 <p><strong>哈希表的扩展与收缩</strong></p>
 <p>当以下条件中的任意一个被满足时， 程序会自动开始对哈希表执行扩展操作：</p>
 <ol>

@@ -2144,8 +2144,7 @@ redis&gt; OBJECT ENCODING profile
 <li>列表 <code>zltail</code> 属性的值为 <code>0x3c</code> （十进制 <code>60</code>）， 这表示如果我们有一个指向压缩列表起始地址的指针 <code>p</code> ， 那么只要用指针 <code>p</code> 加上偏移量 <code>60</code> ， 就可以计算出表尾节点 <code>entry3</code> 的地址。</li>
 <li>列表 <code>zllen</code> 属性的值为 <code>0x3</code> （十进制 <code>3</code>）， 表示压缩列表包含三个节点</li>
 </ul>
-<img src="https://xiaoflyfish.oss-cn-beijing.aliyuncs.com/image/20201223214045.png" style="zoom:50%;" />
-
+<p><img src="https://img-blog.csdnimg.cn/20210613223818804.png"></p>
 <h1 id="连锁更新"><a href="#连锁更新" class="headerlink" title="连锁更新"></a>连锁更新</h1><p>Redis 将这种在特殊情况下产生的连续多次空间扩展操作称之为<strong>连锁更新</strong></p>
 <p>除了添加新节点可能会引发连锁更新之外， 删除节点也可能会引发连锁更新</p>
 <p>因为连锁更新在最坏情况下需要对压缩列表执行 <code>N</code> 次空间重分配操作， 而每次空间重分配的最坏复杂度为 O(N)， 所以连锁更新的最坏复杂度为 <code>O(N^2) </code>。</p>

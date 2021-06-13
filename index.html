@@ -2079,6 +2079,255 @@
 		<div id="index">
 	
 		<div class="index-li">
+			<a href="/2021/05/15/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/%E5%AD%97%E5%85%B8/">
+				<h2 class="index-title">
+					字典
+				</h2>
+				<div class="index-brief">
+					在字典中， 一个键可以和一个值进行关联（或者说将键映射为值）， 这些关联的键和值就被称为键值对。
+字典中的每个键都是独一无二的， 程序可以在字典中根据键查找与之关联的值， 或者通过键来更新值， 又或者根据键来删除整个键值对， 等等。
+字典在 Redis 中的应用相当广泛， 比如 Redis 的数据库
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2021-05-15</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/读书笔记/">读书笔记</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/读书笔记/Redis设计与实现/">Redis设计与实现</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2021/05/15/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Redis%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/%E5%8E%8B%E7%BC%A9%E5%88%97%E8%A1%A8/">
+				<h2 class="index-title">
+					压缩列表
+				</h2>
+				<div class="index-brief">
+					压缩列表（ziplist）是列表键和哈希键的底层实现之一
+当一个列表键只包含少量列表项， 并且每个列表项要么就是小整数值， 要么就是长度比较短的字符串， 那么 Redis 就会使用压缩列表来做列表键的底层实现。
+比如说， 执行以下命令将创建一个压缩列表实现的列表键：
+redis&gt; RPUSH 
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2021-05-15</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/读书笔记/">读书笔记</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/读书笔记/Redis设计与实现/">Redis设计与实现</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2021/05/15/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Redis%E5%BC%80%E5%8F%91%E4%B8%8E%E8%BF%90%E7%BB%B4/%E9%94%AE%E7%AE%A1%E7%90%86/%E5%8D%95%E4%B8%AA%E9%94%AE%E7%AE%A1%E7%90%86/">
+				<h2 class="index-title">
+					单个键管理
+				</h2>
+				<div class="index-brief">
+					单个键键重命名：rename key newkey
+将键python重命名为java：
+127.0.0.1:6379&gt; set python jedis
+OK
+127.0.0.1:6379&gt; rename python java
+OK
+127.0.0.1:6379&gt; get pyt
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2021-05-15</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/读书笔记/">读书笔记</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/读书笔记/Redis开发与运维/">Redis开发与运维</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/读书笔记/Redis开发与运维/键管理/">键管理</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2021/06/06/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Java%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E7%9A%84%E8%89%BA%E6%9C%AF/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E7%9A%84%E6%8C%91%E6%88%98/">
+				<h2 class="index-title">
+					并发编程的挑战
+				</h2>
+				<div class="index-brief">
+					上下文切换即使是单核处理器也支持多线程执行代码，CPU通过给每个线程分配CPU时间片来实现 这个机制。
+时间片是CPU分配给各个线程的时间，因为时间片非常短，所以CPU通过不停地切换线程执行，让我们感觉多个线程是同时执行的，时间片一般是几十毫秒(ms)。
+CPU通过时间片分配算法来循环执行任务，当前
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2021-06-06</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/读书笔记/">读书笔记</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/读书笔记/Java并发编程的艺术/">Java并发编程的艺术</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2021/06/07/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Java%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E7%9A%84%E8%89%BA%E6%9C%AF/Volatile/">
+				<h2 class="index-title">
+					Volatile
+				</h2>
+				<div class="index-brief">
+					volatile是轻量级的 synchronized，它在多处理器开发中保证了共享变量的可见性。
+可见性的意思是当一个线程 修改一个共享变量时，另外一个线程能读到这个修改的值。
+如果volatile变量修饰符使用恰当的话，它比synchronized的使用和执行成本更低，因为它不会引起线程上下文的切
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2021-06-07</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/读书笔记/">读书笔记</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/读书笔记/Java并发编程的艺术/">Java并发编程的艺术</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2021/06/08/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Java%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E7%9A%84%E8%89%BA%E6%9C%AF/Synchronized/">
+				<h2 class="index-title">
+					Synchronized
+				</h2>
+				<div class="index-brief">
+					Java SE 1.6中为了减少获得锁和释放锁带来的性能消耗而引入的偏向锁和轻量级锁，以及锁的存储结构和升级过程。
+Java中的每一个对象都可以作为锁。
+具体表现 为以下3种形式
+
+对于普通同步方法，锁是当前实例对象。
+
+对于静态同步方法，锁是当前类的Class对象。
+
+对于同步方法块，锁是Sync
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2021-06-08</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/读书笔记/">读书笔记</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/读书笔记/Java并发编程的艺术/">Java并发编程的艺术</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
 			<a href="/2021/06/12/%E5%B7%A5%E5%85%B7%E7%B3%BB%E5%88%97/%E5%B7%A5%E5%85%B7%E5%88%86%E4%BA%AB2/">
 				<h2 class="index-title">
 					工具分享2
@@ -2176,50 +2425,6 @@ Pen
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2021/06/08/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Java%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E7%9A%84%E8%89%BA%E6%9C%AF/Synchronized/">
-				<h2 class="index-title">
-					Synchronized
-				</h2>
-				<div class="index-brief">
-					Java SE 1.6中为了减少获得锁和释放锁带来的性能消耗而引入的偏向锁和轻量级锁，以及锁的存储结构和升级过程。
-Java中的每一个对象都可以作为锁。
-具体表现 为以下3种形式
-
-对于普通同步方法，锁是当前实例对象。
-
-对于静态同步方法，锁是当前类的Class对象。
-
-对于同步方法块，锁是Sync
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2021-06-08</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/读书笔记/">读书笔记</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/读书笔记/Java并发编程的艺术/">Java并发编程的艺术</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
 			<a href="/2021/06/08/%E7%AE%97%E6%B3%95/LeetCode/257%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%89%80%E6%9C%89%E8%B7%AF%E5%BE%84/">
 				<h2 class="index-title">
 					257二叉树的所有路径
@@ -2250,82 +2455,6 @@ class Solution &#123;
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
                                         <a href="/categories/算法/LeetCode/">LeetCode</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2021/06/07/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Java%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E7%9A%84%E8%89%BA%E6%9C%AF/Volatile/">
-				<h2 class="index-title">
-					Volatile
-				</h2>
-				<div class="index-brief">
-					volatile是轻量级的 synchronized，它在多处理器开发中保证了共享变量的可见性。
-可见性的意思是当一个线程 修改一个共享变量时，另外一个线程能读到这个修改的值。
-如果volatile变量修饰符使用恰当的话，它比synchronized的使用和执行成本更低，因为它不会引起线程上下文的切
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2021-06-07</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/读书笔记/">读书笔记</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/读书笔记/Java并发编程的艺术/">Java并发编程的艺术</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2021/06/06/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Java%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E7%9A%84%E8%89%BA%E6%9C%AF/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E7%9A%84%E6%8C%91%E6%88%98/">
-				<h2 class="index-title">
-					并发编程的挑战
-				</h2>
-				<div class="index-brief">
-					上下文切换即使是单核处理器也支持多线程执行代码，CPU通过给每个线程分配CPU时间片来实现 这个机制。
-时间片是CPU分配给各个线程的时间，因为时间片非常短，所以CPU通过不停地切换线程执行，让我们感觉多个线程是同时执行的，时间片一般是几十毫秒(ms)。
-CPU通过时间片分配算法来循环执行任务，当前
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2021-06-06</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/读书笔记/">读书笔记</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/读书笔记/Java并发编程的艺术/">Java并发编程的艺术</a>
 										
                                     </span>
                                 
@@ -2696,127 +2825,6 @@ CPU通过时间片分配算法来循环执行任务，当前
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
                                         <a href="/categories/算法/LeetCode/">LeetCode</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2021/05/25/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E5%9B%BE%E8%A7%A3HTTP/HTTP%E5%8D%8F%E8%AE%AE/">
-				<h2 class="index-title">
-					HTTP协议
-				</h2>
-				<div class="index-brief">
-					请求报文GET /index.htm HTTP/1.1 
-Host: hackr.jp
-
-起始行开头的GET表示请求访问服务器的类型，称为方法 （method）。随后的字符串 /index.htm 指明了请求访问的资源对象， 也叫做请求 URI（request-URI）。最后的 HTTP/1.1，即
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2021-05-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/读书笔记/">读书笔记</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/读书笔记/图解HTTP/">图解HTTP</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2021/05/23/%E7%AE%97%E6%B3%95/LeetCode/90%E5%AD%90%E9%9B%86II/">
-				<h2 class="index-title">
-					90子集II
-				</h2>
-				<div class="index-brief">
-					题目地址：https://leetcode-cn.com/problems/subsets-ii/submissions/
-我们只需要判断当前数字和上一个数字是否相同，相同的话跳过即可。当然，要把数字首先进行排序
-class Solution &#123;
-    public List&lt;Li
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2021-05-23</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/算法/">算法</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/算法/LeetCode/">LeetCode</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2021/05/23/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E5%9B%BE%E8%A7%A3HTTP/%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/">
-				<h2 class="index-title">
-					网络基础
-				</h2>
-				<div class="index-brief">
-					TCP/IP的分层管理TCP/IP 协议族里重要的一点就是分层。
-TCP/IP 协议族按层次分别分为以下 4 层：应用层、传输层、网络层和数据链路层。
-TCP/IP 协议族各层的作用如下。
-
-应用层
-
-应用层决定了向用户提供应用服务时通信的活动。
-TCP/IP 协议族内预存了各类通用的应用服务。比如
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2021-05-23</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/读书笔记/">读书笔记</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/读书笔记/图解HTTP/">图解HTTP</a>
 										
                                     </span>
                                 
