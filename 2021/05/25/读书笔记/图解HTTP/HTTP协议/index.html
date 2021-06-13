@@ -2120,12 +2120,12 @@
 		<h1 id="请求报文"><a href="#请求报文" class="headerlink" title="请求报文"></a>请求报文</h1><pre><code>GET /index.htm HTTP/1.1 
 Host: hackr.jp
 </code></pre>
-<p>起始行开头的GET表示请求访问服务器的类型，称为方法 （method）。随后的字符串<code> /index.htm</code> 指明了请求访问的资源对象， 也叫做请求 URI（request-URI）。最后的 HTTP/1.1，即 HTTP 的版本 号，用来提示客户端使用的 HTTP 协议功能。</p>
+<p>起始行开头的GET表示请求访问服务器的类型，称为方法。随后的字符串<code> /index.htm</code> 指明了请求访问的资源对象， 也叫做请求 URI（request-URI）。最后的 HTTP/1.1，即 HTTP 的版本 号，用来提示客户端使用的 HTTP 协议功能。</p>
 <p>综合来看，这段请求内容的意思是：请求访问某台 HTTP 服务器上的<code>/index.htm </code>页面资源。</p>
-<p><strong>请求报文是由请求方法、请求 URI、协议版本、可选的请求首部字段 和内容实体构成的。</strong></p>
-<p><img src="https://xiaoflyfish.oss-cn-beijing.aliyuncs.com/image/20210525002946.png"></p>
+<p><strong>请求报文是由请求方法、请求 URI、协议版本、可选的请求首部字段和内容实体构成的。</strong></p>
+<p><img src="https://img-blog.csdnimg.cn/20210614004739619.png"></p>
 <h1 id="响应报文"><a href="#响应报文" class="headerlink" title="响应报文"></a>响应报文</h1><p>基本上由协议版本、状态码（表示请求成功或失败的数字代 码）、用以解释状态码的原因短语、可选的响应首部字段以及实体主 体构成</p>
-<p><img src="https://xiaoflyfish.oss-cn-beijing.aliyuncs.com/image/20210525003322.png"></p>
+<p><img src="https://img-blog.csdnimg.cn/20210614004821886.png"></p>
 <h1 id="无状态协议"><a href="#无状态协议" class="headerlink" title="无状态协议"></a>无状态协议</h1><p>HTTP 是一种不保存状态，即无状态（stateless）协议。HTTP 协议自 身不对请求和响应之间的通信状态进行保存。也就是说在 HTTP 这个 级别，协议对于发送过的请求或响应都不做持久化处理</p>
 <p>使用 HTTP 协议，每当有新的请求发送时，就会有对应的新响应产 生。协议本身并不保留之前一切的请求或响应报文的信息。这是为了 更快地处理<strong>大量事务</strong>，确保协议的可伸缩性，而特意把 HTTP 协议设 计成如此简单的。</p>
 <p>HTTP/1.1 虽然是无状态协议，但为了实现期望的保持状态功能，于 是引入了 Cookie 技术。有了 Cookie 再用 HTTP 协议通信，就可以管 理状态了。</p>
