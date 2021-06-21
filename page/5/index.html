@@ -279,6 +279,15 @@
 			
 							<ul>
 								<li class="file">
+									<a href="/2021/06/21/MySQL/MySQL%E4%BC%98%E5%8C%96/">
+										MySQL优化
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
 									<a href="/2021/05/16/MySQL/%E4%B8%BB%E4%BB%8E%E5%BB%B6%E8%BF%9F/">
 										主从延迟
 									</a>
@@ -460,6 +469,15 @@
 								<li class="file">
 									<a href="/2021/06/12/%E5%B7%A5%E5%85%B7%E7%B3%BB%E5%88%97/%E5%B7%A5%E5%85%B7%E5%88%86%E4%BA%AB2/">
 										工具分享2
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/06/21/%E5%B7%A5%E5%85%B7%E7%B3%BB%E5%88%97/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
+										正则表达式
 									</a>
 								</li>
 								<div class="article-toc" style="display: none;"></div>
@@ -2079,6 +2097,83 @@
 		<div id="index">
 	
 		<div class="index-li">
+			<a href="/2021/05/15/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Redis%E5%BC%80%E5%8F%91%E4%B8%8E%E8%BF%90%E7%BB%B4/Pipeline/">
+				<h2 class="index-title">
+					Pipeline
+				</h2>
+				<div class="index-brief">
+					Round Trip Time（RTT，命令往返时间）
+Redis提供了批量操作命令（例如mget、mset等），有效地节约RTT
+但大部分命令是不支持批量操作的，例如要执行n次hgetall命令，并没有 mhgetall命令存在，需要消耗n次RTT
+redis-cli的--pipe选项实际上就是使
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2021-05-15</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/读书笔记/">读书笔记</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/读书笔记/Redis开发与运维/">Redis开发与运维</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2021/05/15/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Java%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E5%AE%9E%E6%88%98/%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8/">
+				<h2 class="index-title">
+					线程安全
+				</h2>
+				<div class="index-brief">
+					线程安全性无状态对象一定是线程安全的
+public class StatelessFactorizer implements Servlet &#123;
+    public void service(ServletRequest req, ServletResponse resp) &#123;
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2021-05-15</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/读书笔记/">读书笔记</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/读书笔记/Java并发编程实战/">Java并发编程实战</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
 			<a href="/2021/05/15/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Effective%20Java/%E5%88%9B%E5%BB%BA%E5%92%8C%E9%94%80%E6%AF%81%E5%AF%B9%E8%B1%A1/">
 				<h2 class="index-title">
 					创建和销毁对象
@@ -2778,86 +2873,10 @@ class MedianFinder &#123;
                 </div>
 		</div>	
 	
-		<div class="index-li">
-			<a href="/2021/05/15/%E7%AE%97%E6%B3%95/%E5%89%91%E6%8C%87OFFER/42%E8%BF%9E%E7%BB%AD%E5%AD%90%E6%95%B0%E7%BB%84%E7%9A%84%E6%9C%80%E5%A4%A7%E5%92%8C/">
-				<h2 class="index-title">
-					42连续子数组的最大和
-				</h2>
-				<div class="index-brief">
-					题目地址：https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/
-dp方程：dp[n] = Max(dp[n - 1] + arr[n], arr[n]);
-class Solution &#123;
-    pub
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2021-05-15</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/算法/">算法</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/算法/剑指OFFER/">剑指OFFER</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2021/05/15/%E7%AE%97%E6%B3%95/%E5%89%91%E6%8C%87OFFER/4%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9F%A5%E6%89%BE/">
-				<h2 class="index-title">
-					4二维数组中的查找
-				</h2>
-				<div class="index-brief">
-					题目地址：https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/
-从二维数组的右上角开始查找。如果当前元素等于目标值，则返回 true。如果当前元素大于目标值，则移到左边一列。如果当前元素小于目标值，则移到下边一行
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2021-05-15</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/算法/">算法</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/算法/剑指OFFER/">剑指OFFER</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
 	
 	<div id="index-paginator">
 		
-			<a class="extend prev" rel="prev" href="/page/4/">&lt;</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/6/">&gt;</a>
+			<a class="extend prev" rel="prev" href="/page/4/">&lt;</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/6/">&gt;</a>
 		
 	</div>
 </div>
